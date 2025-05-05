@@ -3,6 +3,10 @@ from pydantic import BaseModel
 import openai
 from readBubble import BubbleAPI
 import os
+from dotenv import load_dotenv
+
+# 載入環境變數
+load_dotenv()
 
 # 初始化 FastAPI 應用
 app = FastAPI()
